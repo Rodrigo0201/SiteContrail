@@ -265,7 +265,8 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* WebKit */
+  appearance: button; /* Padrão */
 }
 
 button:not(:disabled),
@@ -294,7 +295,8 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  -webkit-appearance: listbox;
+  -webkit-appearance: listbox; /* WebKit */
+  appearance: listbox; /* Padrão */
 }
 
 textarea {
@@ -332,7 +334,8 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* WebKit */
+  appearance: searchfield; /* Padrão */
 }
 
 [type="search"]::-webkit-search-decoration {
